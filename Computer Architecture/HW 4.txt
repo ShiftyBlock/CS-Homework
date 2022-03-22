@@ -1,0 +1,107 @@
+/* 4.1
+int arr[100];
+
+void shift_element(int *pElement){
+    int cur= *pElement;
+    while(pElement>arr && *(pElement-1) > cur){
+       * pElement= *(pElement-1);
+        pElement--;
+    }
+    *pElement=cur;
+}
+void insertion_sort(void){
+	int * pElement, * pEnd;
+	pElement=arr+1;
+	int length=0;
+	while(arr[length]!='\0') length++;
+	pEnd= arr+ length;
+	while(pElement<pEnd){
+		if(*pElement<*(pElement-1)){
+			shift_element(pElement);
+		}
+		pElement++;
+	}
+}
+int main()
+{
+	arr[0]=10;
+	arr[1]=5;
+	arr[2]=3;
+	arr[3]=6;
+	arr[4]=2;
+	insertion_sort();
+	for (int i = 0; i < 5; ++i)
+	{
+		printf("%d\n", arr[i]);
+	}
+}
+*/
+
+/* 4.2
+unsigned int strspn(const char * str, const char * delims){
+    unsigned int i;
+    for (i=0; str[i]!='\0' && strpos(delims, str[i])!=-1 ; i++);
+    return i;
+}
+
+unsigned int strcspn(const char * str, const char * delims){
+    unsigned int i;
+    for (i=0; str[i]!='\0' && strpos(delims, str[i])== -1; i++);
+    return i;
+}
+ */
+
+/* 4.3
+void shift_element_by_gap(unsigned int i , unsigned int gap ) {
+    int ival;
+    int j;
+    for(j=i, ival= arr[i]; j>=gap && arr[j-gap]>ival; j-=gap){
+        arr[j]= arr[j-gap];
+    }
+    arr[j]=ival;
+}
+void shell_sort(void){
+    int gap, i, len= sizeof(arr);
+    // sort by comparing against farther elements then closer elemnts
+    for(gap=len/2; gap>0; gap/=2){
+        // shift elements in multiples of gaps
+        for (i=gap; i<len; i++) {
+            // shift
+            if(arr[i-gap]>arr[i]) shift_element_by_gap(i,gap);
+        }
+    }
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

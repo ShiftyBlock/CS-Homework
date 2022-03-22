@@ -1,0 +1,21 @@
+GRADER file for Homework 8
+
+Your Name:  David Yang
+ 
+
+Part III.  Running time comparisons
+
+  List size         mergesort             quicksort
+      10               0                     0           
+     100               1                     1 
+   1,000              11                     3
+  10,000              32                    21
+ 100,000             164                   141
+
+Part IV.
+
+  Is mergesort stable?  Yes.
+  Why or why not? Mergesort is by default, a stable sorting nlogn algorithm. My implementation reflects that.
+
+  Is quicksort stable?  It is stable in my implementation.
+  Why or why not? I scan the queue from left to right when partitioning, so we don't have extreme runtimes.

@@ -1,0 +1,34 @@
+2.1
+char is 1 byte, min=-128, max=127
+unsigned char 1 byte, min=0, max=255
+short is 2 bytes, min=-32768, max=32767
+int is 4 bytes, min= -1<<31 -1 , max= 1<<31 -1 
+unsigned int is 4 bytes, min=0, max= 1<<32 -1
+unsigned long is 4 bytes, min=0, max= 1<<32 -1
+float is 4 bytes, min is -1.175e-38, max= 3.4028e38
+
+2.2
+if(c>='a' && c<='z')
+if(c>='A' && c<='Z')
+if(c>='0' && c<='9')
+if(c==' ' || c=='\t' || c=='\n')
+
+2.3
+int val= val&0xF; if(val==7 || val==11 || val==13 || val==14 || val==15); // 0x7, 0xB, 0xD, 0xE, 0xF
+
+//mask only last 8 bits, shift left 8 bits, then add back the 8 right bits
+num= (num& 0xFF)<<8 | (num>>8)
+
+//mask 4 bits, shift 12 to the left, and then add back the other 12 bits ending at the first 4 mask
+num=(num>>4) | (num&0xF)<<12 
+
+2.4
+a. x=0xFF3, c=0 c=(x&(mask==0))
+b. x=11, y=3, z=16    z=((x++) + (++(y*2))) 
+c. x=10, z=1, y=4     y>>= (x & 0x2) &&z
+
+2.5
+a. you cant have a number as the variable name
+b. in the expression, change x=1 to x==1 and y=0 to y==0
+c. its actually y= ++x + y; z = z-- > x, which is valid
+d. the statement is compilationally valid, but == takes precendence over &, so we want to change it to ison= (x&MASK)==MASK

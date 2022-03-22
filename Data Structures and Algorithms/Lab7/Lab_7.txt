@@ -1,0 +1,23 @@
+Lab 7
+1. Formally prove 2^n+1 is O(4^n-16)
+Big O definition: T(n) is O(4^n) if T(n)<=c*4^n-16 for some n.
+then c>= (2^n+1)/(4^n-16);
+assuming n=2, c>= 5.
+or equivalently, 2^n+1 <= 5*4^n-16.
+Is this true?
+Well, for any n>=1, we know that 4^n>2^n>n>=1.
+thus, this inequality is true.
+
+Part 2.
+Given: f(n) is O(g(n)). g(n) is O(h(n)).
+Prove: f(n) is O(h(n))).
+There must exist constants cf, nf, cg, ng such that  
+f(n)<= cf * g(n), g(n) <= cg * h(n)
+therfore, f(n)<= cf * g(n) <= cf* cg* h(n)
+we can set c= cf*cg, and this is true.
+
+Part 3. 
+Prove .01* n^2 -1 is not O(N)
+lim n-> inf (c*f(n))/(t(n)) = 0 
+This is because as n-> inf, t(n) approaches inf^2, while f(n)* c is only inf*c. 
+Therefore, .01*n^2-1 is larger than O(N), so it cannot be O(N);

@@ -1,0 +1,82 @@
+Memory Hierachy.txt
+Problem 1:
+12: 0 CT
+11: 1 CT
+10: 1 CT
+9: 0 CT
+8: 1 CT
+7: 0 CT
+6: 1 CT
+5: 0 CT
+4: 1 CI
+3: 0 CI
+2: 0 CI
+1: 1 CO
+0: 1 CO
+
+Problem 2:
+12: 0 CT
+11: 1 CT
+10: 1 CT
+9: 0 CT
+8: 1 CT
+7: 0 CT
+6: 1 CT
+5: 0 CT
+4: 1 CI
+3: 0 CI
+2: 0 CI
+1: 1 CO
+0: 1 CO
+
+B: 
+Ox3
+Ox4
+Ox6A
+No
+cache miss
+
+Problem 3:
+12: 0 CT
+11: 1 CT
+10: 1 CT
+9: 0 CT
+8: 0 CT
+7: 1 CT
+6: 0 CT
+5: 1 CT
+4: 1 CI
+3: 0 CI
+2: 1 CI
+1: 0 CO
+0: 0 CO
+B. 
+0x0
+0x5
+0x65
+No
+cache miss
+
+Problem 4:
+12: 0 CT
+11: 1 CT
+10: 0 CT
+9: 1 CT
+8: 0 CT
+7: 0 CT
+6: 0 CT
+5: 1 CT
+4: 1 CI
+3: 0 CI
+2: 0 CI
+1: 0 CO
+0: 1 CO
+Ox1
+Ox4
+OX51
+No
+cache miss
+
+Problem 5
+0x64C, 0x64D, 0x64E, 0x64F
+

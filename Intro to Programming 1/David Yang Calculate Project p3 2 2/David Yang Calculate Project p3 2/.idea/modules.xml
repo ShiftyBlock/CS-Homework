@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/David Yang Calculate Project/Access Calculate/Access Calculate.iml" filepath="$PROJECT_DIR$/David Yang Calculate Project/Access Calculate/Access Calculate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/David Yang Calculate Project/Calculate Library/Calculate Library.iml" filepath="$PROJECT_DIR$/David Yang Calculate Project/Calculate Library/Calculate Library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/David Yang Calculate Project.iml" filepath="$PROJECT_DIR$/.idea/David Yang Calculate Project.iml" />
+    </modules>
+  </component>
+</project>
